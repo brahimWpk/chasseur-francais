@@ -1,0 +1,314 @@
+.single-test {
+	.article_body_content {
+		text-align: center;
+		&,
+		p {
+			font-family: "NeutraTextDemi";
+			font-size: 16px;
+
+			color: #333;
+		}
+		p {
+			&:last-child {
+				margin-bottom: 0;
+			}
+		}
+		.posts_nav {
+			display: none;
+		}
+	}
+}
+
+#content #quizz {
+	margin-bottom: 20px;
+	.quizz_img {
+		float: none!important;
+		width: 100%!important;
+		padding-right: 0;
+		padding-left: 0;
+		img {
+			width: 100%;
+		}
+	}
+	.title-question {
+		font-family: $main_font;
+		font-size: 22px;
+
+		color: $main_color;
+	}
+	.article-intro {
+		h2 {
+			display: block;
+			margin: 10px 0;
+
+			font-family: $main_font_bold;
+			font-size: 22px;
+
+			text-transform: lowercase;
+
+			color: #333;
+			&:first-letter {
+				text-transform: uppercase;
+			}
+		}
+	}
+	.title {
+		margin: 20px 0;
+
+		font-family: $main_font;
+		font-size: 20px;
+		font-weight: bold;
+		line-height: 1em;
+
+		color: #333;
+	}
+	#my_profile,
+	form {
+		.content {
+			float: none!important;
+			width: 100%!important;
+			padding-right: 0;
+			padding-left: 0;
+
+			text-align: center;
+		}
+	}
+	.bees_same_result {
+		display: none;
+	}
+	.responses {
+		width: 100%!important;
+		padding-right: 0;
+		padding-left: 0;
+		label {
+			padding-left: 15px;
+
+			font-family: $main_font;
+			font-size: 14px;
+			font-weight: 400;
+
+			text-align: left;
+			text-transform: lowercase !important;
+
+			color: #333;
+		}
+		.q_txt {
+			display: block;
+			margin-left: 10px;
+			&:first-letter {
+				text-transform: uppercase !important;
+			}
+		}
+		.wrong {
+			color: #e11924;
+		}
+		.correct {
+			color: #19ae86;
+		}
+	}
+	.description {
+		&,
+		p {
+			font-family: $main_font;
+			font-size: 17px;
+
+			text-align: left;
+
+			color: #414141;
+		}
+	}
+	.progress_bar {
+		position: relative;
+
+		margin: 30px 0 20px 0;
+
+		text-align: center;
+
+		.steps {
+			position: relative;
+
+			display: inline-block;
+			padding: 0 10px;
+			margin: 0 -2px;
+
+			text-align: center;
+
+			&:first-child {
+				padding-left: 0;
+
+				text-align: left;
+			}
+			&:last-child {
+				padding-right: 0;
+
+				text-align: right;
+			}
+
+			&:after,
+			&:before {
+				position: absolute;
+				top: 50%;
+				z-index: 22;
+
+				display: block;
+				width: 50%;
+				height: 2px;
+				margin-top: -1px;
+
+				content: "";
+
+				background-color: $main_color;
+			}
+			&:after {
+				right: 0;
+			}
+			&:before {
+				left: 0;
+			}
+
+			&:first-child:after,
+			&:last-child:before {
+				width: 100%;
+			}
+
+			&:first-child:before,
+			&:last-child:after {
+				content: none;
+			}
+
+			> span {
+				position: relative;
+				z-index: 99;
+
+				display: inline-block;
+				width: 40px;
+				height: 40px;
+
+				font-family: $main_font;
+				font-size: 16px;
+				line-height: 2.3em;
+
+				text-align: center;
+
+				color: $main_color;
+				border: 2px solid $main_color;
+				background-color: #fff;
+			}
+
+			&.current {
+				> span {
+					color: #fff;
+					background-color: $main_color;
+				}
+			}
+		}
+	}
+
+	.btn-result {
+		width: 100%!important;
+		padding: 0;
+		margin-top: 20px;
+	}
+	.action,
+	a.ribbon_link,
+	.btn-arrow-link {
+		padding: 10px 15px;
+		margin-bottom: 20px;
+
+		font-family: $main_font !important;
+		font-size: 20px!important;
+
+		cursor: pointer;
+		text-transform: uppercase;
+
+		color: #fff!important;
+		border: 0;
+		background-color: $main_color;
+	}
+	.action {
+		position: relative;
+		z-index: 9;
+
+		float: right!important;
+		margin-top: 40px;
+	}
+	& > .row {
+		display: inline-block;
+	}
+	#other_profiles {
+		float: left;
+		width: 100%;
+		margin-top: 0;
+
+		text-align: left;
+		a {
+			display: block;
+			width: 100%;
+
+			font-family: "HaboroBook";
+			font-size: 14px;
+
+			text-align: center;
+
+			color: #333;
+			&,
+			&:hover {
+				text-underline: none !important;
+			}
+		}
+		.separator {
+			float: none!important;
+			margin-bottom: 10px;
+		}
+		.count_result {
+			text-align: center;
+		}
+		.profile {
+			margin-bottom: 20px;
+		}
+	}
+	.radio {
+		margin-bottom: 20px;
+		overflow: hidden;
+	}
+	.radio_btn {
+		position: absolute;
+		top: 2px;
+		left: 1px;
+
+		display: block;
+		width: 12px;
+		height: 12px;
+
+		background-color: #fff;
+
+		@include box-shadow(0px 0px 0px 1px #c7c7c7);
+		@include border-radius(50px);
+		&:after {
+			position: absolute;
+			top: 50%;
+			left: 50%;
+
+			display: none;
+			width: 7px;
+			height: 7px;
+
+			content: "";
+
+			background-color: $main_color;
+
+			@include translate(-50%, -50%);
+			@include border-radius(50px);
+		}
+	}
+	input[type="radio"] {
+		left: -9999px;
+		&:checked {
+			+ .radio_btn {
+				&:after {
+					display: block;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,100 @@
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/bootstrap-v3/variables";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/diapo_monetisation";
+
+body.diapo_monetisation{
+	header{
+		display: none;
+	}
+	.block_diapo {
+		margin-top: 20px;
+		margin-bottom: 20px;
+		.masc_legende{
+			margin-top: 0;
+			background-color: #f0f0f0;
+			padding: 10px;
+			&:after{
+				content: none;
+			}
+		}
+		.lists_legend{
+			margin-top: 0;
+			margin-bottom: 0;
+			&:before, 
+			&:after{
+				content: none;
+			}
+			.legend_title{
+				display: inline-block;
+				margin-left: 10px;
+				padding: 0;
+			}
+			.slide_nb{
+				display: inline-block;
+				padding-left: 0;
+				height: auto;
+				.wrapper{
+					background-color: transparent;
+					padding: 0;
+					line-height: 1em;
+				}
+				.caption-navs{
+					display: none;
+				}
+			}
+			li{
+				&.active{
+					margin-top: 0;
+				}
+			}
+			p{
+				margin-bottom: 0 !important;
+			}
+		}
+	}
+	#content{
+		padding-top: 0;
+		.post{
+			.block_breadcrumb, .author_recette, .date_recette{
+				display: none !important;
+			}
+			.scroll_arrows{
+				font-family: "OswaldRegular";
+				font-weight: bold;
+				margin-bottom: 20px;
+				.arrow_previous, 
+				.arrow_next{
+					background-color: $main_color;
+				}
+			}
+			.title {
+				font-size: 28px !important;
+				line-height: 1em;
+				margin-top: 0;
+				margin-bottom: 0;
+			}
+		}
+		.excerpt{
+			p{
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+@media (min-width: $screen-md-min){
+	body.diapo_monetisation{
+		#principal-menu{
+			text-align: left;
+		}
+		.logo_mobile{
+			position: relative;
+			display: inline-block;
+			float: left;
+			width: 120px;
+			margin-top: 8px;
+			margin-left: 10px;
+			margin-right: 10px;
+			z-index: 91;
+		}
+	}
+}

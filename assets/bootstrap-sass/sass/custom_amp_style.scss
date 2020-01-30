@@ -1,0 +1,54 @@
+@import 'fonts_v3';
+@import 'variables';
+
+.amp-wp{
+	//.amp-wp-header
+	&-header{
+		background-color: $bg-color-amp;
+	}
+	//.amp-wp-footer
+	&-footer{
+		background-color: $bg-color-amp;
+	}
+	&-title {
+    	font-family: $main-font-amp;
+	}
+	&-article-content{
+	    p {
+		    font-size: 16px;
+		    font-weight: 300;
+		    line-height: 1.5em;
+		    color: $p-color-amp;
+		    word-wrap: break-word;
+		    overflow-wrap: break-word;
+		    word-break: break-word;
+		    font-family: $main-font-amp;
+		}
+		a {
+			color: $main-color-amp;
+   			text-decoration: none;
+		}
+		ul {
+			margin-bottom: 10px;
+		}
+		.diaporama{
+			&-item-count{
+   				color:  $main-color-amp;
+			}
+			&-item-title{
+				font-size:16px;
+			}
+		}
+	}
+
+
+}//\.amp-wp
+
+.amp-wp{
+	//.amp-wp-footer
+	&-footer{
+		a{
+			color: #000000;
+		}
+	}
+}

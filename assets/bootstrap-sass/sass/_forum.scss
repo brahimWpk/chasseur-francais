@@ -1,0 +1,22 @@
+$font: "montserrat-regular","Helvetica Neue",Helvetica,Arial,sans-serif;
+#content #sabai-content{
+    font-family: $font;
+    ul li{
+	    font-size: 13.3px;
+	    line-height: 19px;
+	    font-family: $font;
+	}
+	p{
+		font-family: $font;
+		font-size: 16px;
+		line-height: 24px;
+	}
+}
+
+footer{ 
+	.widget-title{ 
+		a{
+			color: #fff;
+		}
+	}
+}

@@ -1,0 +1,1017 @@
+
+/*
+----------    Top bar    ----------
+*/
+#barreTopInfo{
+	clear: both;
+	background-color: #eae7e7;
+	a{
+		color: #444;
+		font-family: "Arial";
+		font-size: 12px;
+		&:hover{
+			background-color: transparent;
+		}
+	}
+}//.barreTopInfo
+
+
+
+
+.navbar-default .navbar-nav > li{
+	&.les-experts, &.academie, &.jardin-nav-logo, &.homenergie-nav-logo{
+	    background-color: transparent ;
+	    background-repeat:  no-repeat;
+		>a {
+		    min-width: 100px;
+			font-size: 0 !important;
+			color: transparent;
+    		padding-bottom: 4px !important;
+		    background-color: transparent;
+		    padding: 8px 4px !important;
+		    &:hover{
+		    	background:none !important;
+		    	border:0 ;
+		    }
+		}
+	}
+	&.academie{
+		background-image: url("../images-v3/academie.png");
+		vertical-align: middle;
+		top: 1px;
+		height: 35px;
+	}
+	&.les-experts{
+		background-image: url("../images-v3/logo-les-experts-menu.png");
+		vertical-align: top;
+	}
+	&.jardin-nav-logo{
+		background-image: url("../images-v3/mjmm_logo.svg");
+		width: 108px;
+		vertical-align: top;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&.homenergie-nav-logo{
+		background-image: url("../images-v3/LOGOoptimise.svg");
+		width: 120px;
+		vertical-align: top;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+}
+
+
+/*
+----------    Header section    ----------
+*/
+header{
+	background: #fff;
+	>.container{
+		position: relative;
+	}
+	.col-mag{
+		.sub_widget_text{
+			.title{
+				color: $main_color;
+				font-size: 15px;
+				font-family: $main_font;
+			}
+			.sub_price{
+				color: $main_color;
+				font-size: 25px;
+				font-family: $main_font_bold;
+				border-bottom: 1px solid $main_color;
+			}
+		}
+	}//.col-mag
+}//header
+
+body.prix_renovation_2018{
+	header {
+		height: 145px;
+		>.container {
+			background: url('../images-v3/bg_header.png');
+			background-repeat: no-repeat;
+			background-position: bottom center;
+			background-size: contain;
+			background-origin: content-box;
+		}
+		.navbar-brand{
+			max-width: 300px;
+			margin-top: 0;
+		}
+	}
+}
+
+
+
+
+
+/*
+----------    Navigation menu    ----------
+*/
+
+.navbar{
+	min-height: auto;
+	background-color: transparent;
+	border: none;
+	margin: 0;
+	&.navbar-fixed-top{
+		background-color: $main_color;
+	}
+	.navbar_elem_wrapper{
+		position: relative;
+	}
+	.logo_mobile{
+		display: none;
+	}
+	.blockSearch{
+    	.search_txt_input{
+    		height: 36px;
+    		input[type="text"]{
+			    background-color: $dark_main_color;
+				color: #fff;
+				font-size: 20px;
+				font-style: italic;
+    		}
+    	}
+   		.submit_search_btn{
+				background-color: $main_color;
+				text-align: center;
+    	}
+	}
+}
+
+.navbar-toggle {
+	display: block;
+	float: right;
+	width: 45px;
+	height: auto;
+	text-align: center;
+	border: 0px solid transparent;
+	z-index: 9992;
+	padding: 2px;
+	margin: 0;
+		&, &:hover{
+			background-color: transparent!important;
+		}
+		.icon-bar {
+			width: 23px;
+			height: 5px;
+			display: block;
+			margin-top: 0;
+			margin: 3px auto;
+			background-color: #fff!important;
+		}
+}
+
+
+#principal-menu {
+	position: relative;
+	background-color: $main_color;
+	height: 36px;
+	border: 0;
+	text-align: center;
+	z-index: 1001;
+	>.navbar-nav{
+		float: none;
+		padding-right: 105px;
+		margin: 0;
+		>li{
+			position: relative;
+			display: inline-block;
+			float: none !important;
+			a{
+				display: block;
+				font-family: $main_font;
+				font-size: 13px;
+				padding: 8px 3px;
+				&:hover, &:active{
+					background-color: transparent;
+				}
+			}
+			>a{
+				color: #fff;
+			}
+		}
+	}
+	.menu-item-has-children,
+	.has_child_items{
+		.arrow{
+			display: block;
+			width: 30px;
+			height: 30px;
+			position: absolute;
+			right: 10px;
+			top: 2px;
+			background-image: url('../images-v3/nav_menu_child_arrow.png');
+			background-repeat: no-repeat;
+			z-index: 20;
+			cursor: pointer;
+		}
+	}
+	.menu-item-has-children{
+		> .arrow{
+			display: none;
+		}
+		.arrow{
+			background-position: 0 0;
+		}
+	}
+	.has_child_items{
+		.arrow{
+			background-position: -30px 0;
+		}
+	}
+	.list-children-cat{
+		position: absolute;
+		display: none;
+		width: auto;
+		left: 0;
+		background-color: #fff;
+		white-space: nowrap;
+		text-align: left;
+		>.container{
+			width: auto;
+		}
+		.list-cats-children{
+			width: 100%;
+			min-height: auto;
+			margin: 0;
+			padding: 0;
+		}
+
+		ul{
+			width: 250px;
+			list-style: none;
+			padding: 0;
+			margin: 0;
+			li{
+				position: relative;
+				a{
+					color: #414141;
+					cursor: pointer;
+				}
+				&.link-red{
+					a{
+						background-color: $main_color;
+						color: #fff;						
+					}
+				}
+				>ul{
+					display: none;
+				}
+			}
+		}
+	}	
+	.navbar-sociallink{
+		position: relative;
+		width: 100%;
+		text-align: right;
+		padding: 10px;
+		background-color: $main_color;
+		&:before{
+			position: absolute;
+			content: "";
+			height: 2px;
+			width: 40%;
+			top: 0;
+			right: 5px;
+			background-color: $dark_main_color;
+		}
+		li{
+			display: inline-block;
+			margin-left: 10px;
+			&:first-child{
+				margin-left: 0;
+			}
+			a{
+				padding: 0;
+				height: 19px;
+				background-image: url('../images-v3/social_media_sprite.png');
+				background-repeat: no-repeat;
+				text-indent: -200px;
+				overflow: hidden;
+				&:hover, &:focus{
+					background-color: transparent!important;
+				}
+				&.fb{
+					background-position: 0 -20px;
+				}
+				&.g{
+					background-position: -12px -20px;
+				}
+				&.t{
+					background-position: -39px -20px;
+				}
+				&.pint{
+					background-position: -83px -20px;
+				}
+				&.daily{
+					background-position: -99px -20px;
+				}
+				&.youtube{
+					background-position: -59px -20px;
+				}
+			}
+		}
+	}
+}
+
+
+/*
+----------    Top bar    ----------
+*/
+#barreTopInfo{
+	ul.nav{
+		margin-top: 3px;
+		li{
+			margin-right: 10px;
+			a{
+				padding: 2px 0;
+			}
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+	}
+	.top-pages-menu{
+		text-align: left;
+	}//.our_sites
+	.navbar-sociallink{
+		float: right;
+		margin-top: 4px;
+	}//.navbar-sociallink
+	.partners_links{
+		float: right;
+		border-left: 1px solid #444444;
+    	padding-left: 15px;
+    	margin-left: 15px;
+	}//.partners_links
+}//.barreTopInfo
+
+
+#barreTopInfo,
+#principal-menu{
+	.navbar-sociallink{
+		li{
+			display: inline-block;
+			margin-left: 10px;
+			&:first-child{
+				margin-left: 0;
+			}
+			a{
+				padding: 0 !important;
+				height: 19px;
+				background-image: url('../images-v3/social_media_sprite.png');
+				background-repeat: no-repeat;
+				text-indent: -200px;
+				overflow: hidden;
+				&.fb{
+					width: 11px;
+					background-position: 0 0;
+				}
+				&.g{
+					width: 26px;
+					background-position: -12px 0;
+				}
+				&.tw, &.t{
+					width: 17px;
+					background-position: -39px 0;
+				}
+				&.pint{
+					width: 16px;
+					background-position: -83px 0;
+				}
+				&.daily{
+					width: 16px;
+					background-position: -99px 0;
+				}
+				&.youtube{
+					width: 23px;
+					background-position: -59px 0;
+				}
+				&.cam{
+					width: 17px;
+					background-position: -115px 0;
+				}
+			}
+		}
+	}//.navbar-sociallink
+}
+
+
+
+
+
+
+
+
+/*
+----------    Header section    ----------
+*/
+header{
+	width: 100%;
+	height: 120px;
+	text-align: center;
+	position: relative;
+	.col-mag{
+		position: absolute;
+		top: 15px;
+		left: 0;
+
+		.sub_media{
+			display: inline-block;
+		}
+		.sub_widget_text{
+			float: left;
+			text-align: center;
+			max-width: 120px;
+			margin-left: 10px;
+			.title{
+				display: block;
+			}
+			.sub_price{
+				display: inline-block;
+				padding-bottom: 5px;
+			}
+		}
+		img.sub_media{
+			float: left!important;
+		}
+	}//.col-mag
+	.navbar-brand{
+		display: block;
+		margin: 20px auto 0 auto;
+		max-width: 430px;
+		float: none;
+		height: auto;
+	}//.navbar-brand
+}//header
+
+
+
+
+
+
+/*
+----------    Navigation menu    ----------
+*/
+.navbar{
+	.blockSearch{
+		width: 100%;
+    	position: absolute;
+    	top: 0;
+    	right: 0;
+    	z-index: 9995;
+    	visibility: hidden;
+    	form{
+    		visibility: visible;
+    	}
+    	.search_txt_input{
+    		display: none;
+		    width:100%;
+		    height: 37px;
+		    position: absolute;
+		    top: 0;
+		    right: 0;
+		    padding: 0;
+		    margin: 0;
+		    &.show{
+		    	display: block;
+		    }
+    		input[type="text"]{
+				width: 100%;
+				height: 100%;
+			    border-radius: 0;
+			    border: 0;
+			    background-image: url("../images-v3/search_loop.png");
+			    background-repeat: no-repeat;
+				background-position: 15px 50%;
+				padding-left: 60px;
+				&::-webkit-input-placeholder {
+					/* WebKit, Blink, Edge */
+					color: #fff;
+				}
+				&:-moz-placeholder {
+					/* Mozilla Firefox 4 to 18 */
+					color: #fff;
+				}
+				&::-moz-placeholder {
+					/* Mozilla Firefox 19+ */
+					color: #fff;
+				}
+				&:-ms-input-placeholder {
+					/* Internet Explorer 10-11 */
+					color: #fff;
+				}
+    		}
+    		.close_menu_search{
+    			display: block;
+    			width: 19px;
+    			height: 19px;
+    			position: absolute;
+    			right: 15px;
+    			top: 50%;
+    			margin-top: -10px;
+			    background-image: url("../images-v3/close_search.png");
+			    background-repeat: no-repeat;
+			    cursor: pointer;
+    		}
+    	}
+    	.form-group-btn{
+    		display: none;
+    	}
+   		.submit_search_btn{
+				margin: 0;
+				width: 55px;
+				height: 36px;
+				border-radius: 0;
+				padding: 6px 0;
+				&:after{
+					content: "";
+					display: inline-block;
+					width: 25px;
+					height: 25px;
+					background-image: url('../images-v3/search_loop.png');
+					background-repeat: no-repeat;
+					background-position: 0 0;
+					vertical-align: middle;
+					float: left;
+					margin-left: 15px;
+			}
+			&:hover{
+				cursor: pointer;
+			}
+    	}
+	}
+}
+.admin-bar{
+	.navbar-site{
+		&.navbar-fixed-top{
+			top: 32px;
+		}
+	}
+}
+
+@media (min-width: $screen-md-min){
+	#principal-menu {
+		>.navbar-nav{
+		}
+		.menu-item-has-children,
+		.has_child_items{
+			&:hover{
+				> .arrow{
+					background-position: -60px 0;
+				}
+			}
+		}
+		.list-children-cat ul li{
+			&:hover{
+				>ul{
+					display: block;
+				}
+				>a{
+					background-color: $main_color;
+					color: #fff;
+				}
+			}
+		}
+		.navbar-nav {
+			.vertical-nav{
+				.navbar-toggle-responsive {
+					background-color: #ffffff;
+					.icon-bar {
+						background: $main_color;
+					}
+				}
+				&:hover {
+					.navbar-toggle-responsive {
+						background-color: #ffffff;
+					}
+				}
+				.navbar-responsive {
+					background-color: #fff !important;
+					li{
+						color: $main_color !important;
+						border-bottom: 0px solid $main_color;
+						a {
+							color: $main_color !important;
+						}
+						&.has_child_items{
+							.arrow {
+								display: none;
+							}
+						}
+					}
+					> li {
+
+						&:hover {
+							background: $main_color;
+							> a {
+								background: $main_color;
+								color: #ffffff !important;
+							}
+						}
+					}
+					ul {
+						background: #ffffff;
+						border: 0px solid $main_color;
+						border-bottom: 0px solid $main_color;
+					}
+				}
+			}
+		}
+	}
+
+}
+
+// Responsive v3
+
+@media (max-width: $screen-sm-max){
+	.navbar-default .navbar-nav > li{
+		&.jardin-nav-logo, &.homenergie-nav-logo{
+			background-position: left center;
+		}
+	}
+	#barreTopInfo{
+		display: none;
+	}
+	header{
+		&, .col-mag{
+			display: none;
+		}
+	}
+
+	.navbar{
+		left: 0!important;
+		.navbar_elem_wrapper{
+			.mon-jardin-ma-maison {
+				display: none;
+			}
+		}
+		#menu-menu_header,
+		.navbar-sociallink{
+			display: none;
+		}
+		.logo_mobile{
+			display: block;
+			width: 120px;
+			position: absolute;
+			top: 10px;
+			left: 50%;
+			@include translate(-50%, 0);
+			z-index: 9992;
+		}
+		#principal-menu{
+			position: relative;
+			background-color: $main_color;
+			height: auto;
+			min-height: 36px;
+			border: 0;
+			text-align: left;
+			z-index: 999;
+			>.navbar-nav{
+				padding: 0;
+				margin-top: 36px;
+				>li{
+					display: block;
+					width: 100%;
+				}
+			}
+			.list-children-cat{
+				position: relative;
+				ul{
+					width: 100%;
+				}
+			}
+			.menu-item-has-children,
+			.has_child_items{
+				padding-right: 0;
+			}
+			.menu-item-has-children{
+				.arrow{
+					display: block;
+				}
+			}
+			.has_child_items{
+				ul{
+					a{
+						padding-left: 20px;
+					}
+				}
+			}
+		}
+	}
+	
+	#principal-menu {
+		.list-children-cat{
+			ul li{
+				&:hover>ul{
+					display: none !important;
+				}
+				&.show-child>ul{
+					display: block !important;
+				}
+			}
+		}
+		.navbar-nav{
+			li {
+				.list-children-cat {
+					display: none !important;
+				}
+				&.show-child {
+					.list-children-cat {
+						display: block !important;
+					}
+					&.menu-item-has-children{
+						>.arrow{
+							background-position: -60px 0;
+						}
+					}
+					&.has_child_items {
+						>.arrow{
+							background-position: -90px 0;
+						}
+					}
+				}
+			}
+
+
+			.vertical-nav{
+				.navbar-toggle-responsive,
+				>a{
+					display: none;
+				}
+				&, .menu-item-has-children{
+					.arrow{
+						display: none;
+					}
+				}
+				.menu-item-has-children.has_child_items{
+					.arrow{
+						display: block;
+						background-position: 0 0;
+					}
+					&.show-child .arrow {
+						background-position: -60px 0;
+					}
+				}
+				.navbar-responsive{
+					.navbar-responsive-level {
+						background-color: #fff;
+						display: none;
+					}
+					>li{
+						>a{
+							color: #fff;
+						}
+						&.show-child {
+							.navbar-responsive-level {
+								display: block;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+
+	.show-menu{
+		.navbar{
+			#menu-menu_header{
+				display: block;
+			}
+		}
+		.navbar-header{
+			.navbar-toggle{
+				&:before{
+					content: "";
+					display: block;
+					position: absolute;
+					width: 21px;
+					height: 21px;
+					background-image: url('../images-v3/nav_menu_close_icon.png');
+					background-repeat: no-repeat;
+					z-index: 99;
+					margin: 3px 10px;
+				}
+				span{
+					display: none;
+				}
+			}
+		}
+	}
+}
+
+.barre_de_nav_sur_petite_resolution_ecran_161443657 {
+	@media (min-width: $screen-sm-min) AND (max-width: $screen-md-max){
+		#barreTopInfo{
+			display: none;
+		}
+		header{
+			&, .col-mag{
+				display: none;
+			}
+		}
+
+		.navbar{
+			left: 0!important;
+			.navbar_elem_wrapper{
+				.visible-sm {
+					display: block !important;
+				}
+				.mon-jardin-ma-maison {
+					display: block !important;
+				    position: absolute;
+				    z-index: 1000;
+				    background-image: url(../images-v3/mjmm_light.png);
+				    background-repeat: no-repeat;
+				    background-position: center;
+				    background-size: cover;
+				    right: 20%;
+				    top: 24%;
+				    width: 66px;
+				    height: 22px;
+				}
+			}
+			#menu-menu_header,
+			.navbar-sociallink{
+				display: none;
+			}
+			.logo_mobile{
+				display: block;
+				width: 190px;
+				position: absolute;
+				top: 5px;
+				left: 50%;
+				@include translate(-50%, 0);
+				z-index: 9992;
+			}
+			#principal-menu{
+				position: relative;
+				background-color: $main_color;
+				height: auto;
+				min-height: 36px;
+				border: 0;
+				text-align: left;
+				z-index: 999;
+				>.navbar-nav{
+					padding: 0;
+					margin-top: 36px;
+					>li{
+						display: block;
+						width: 100%;
+					}
+				}
+				.navbar-nav{
+					>li{
+						&:hover{
+							>.list-children-cat{
+								display: block;
+							}
+						}
+					}
+				}
+				.list-children-cat{
+					position: relative;
+					ul{
+						width: 100%;
+						li{
+							ul{
+								position: relative;
+								left: 0;
+							}
+						}
+					}
+				}
+				.menu-item-has-children,
+				.has_child_items{
+					padding-right: 0;
+				}
+				.menu-item-has-children{
+					.arrow{
+						display: block;
+					}
+				}
+				.has_child_items{
+					ul{
+						a{
+							padding-left: 20px;
+						}
+					}
+				}
+			}
+		}
+
+		&.show-menu{
+			.navbar{
+				#menu-menu_header{
+					display: block;
+					padding-left: 0 !important;
+					.nav_logo {
+						display: none !important;
+					}
+				}
+				.mon-jardin-ma-maison{
+					display: none !important;
+				}
+			}
+			.navbar-header{
+				.navbar-toggle{
+					&:before{
+						content: "";
+						display: block;
+						position: absolute;
+						width: 21px;
+						height: 21px;
+						background-image: url('../images-v3/nav_menu_close_icon.png');
+						background-repeat: no-repeat;
+						z-index: 99;
+						margin: 3px 10px;
+					}
+					span{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+
+	@media (max-width: $screen-xs-min){
+		.mon-jardin-ma-maison {
+			right: 17% !important;
+		    top: 32% !important;
+		    width: 48px !important;
+		    height: 14px !important;
+		}
+	}
+}
+
+@media (max-width: $screen-md-max){
+	.navbar{
+		#principal-menu{
+			>.navbar-nav{
+				>li{
+					a{
+						font-size: 12px;
+						width: 100%;
+					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: $screen-xs-max){
+	.navbar{
+		&-default{
+			.navbar-nav{
+				>li{
+					&.jardin-nav-logo{
+						background-position: 15px center;
+					}
+					&.homenergie-nav-logo{
+						background-position: 13px center;
+						height: 30px;
+					}
+				}
+			}
+		} 
+		#principal-menu{
+			height: 36px;
+			.navbar-nav{
+				background-color: rgba(219, 44, 52, .9);
+				>li{
+					&.nl_link{
+						display: none;
+						width: auto;
+						position: relative;
+						top: 0;
+						right: 0;
+					}
+
+					a {
+						font-size: 24px;
+						line-height: 24px;
+						white-space: normal;
+						padding-left: 15px;
+					}
+				}
+			}
+			
+		}
+		.blockSearch{
+			 .search_txt_input{
+			 	input[type="text"]{
+			 		font-size: 14px;
+			 	}
+			 }
+		}
+	}
+
+}
+
+
+@import 'mjmm_color';

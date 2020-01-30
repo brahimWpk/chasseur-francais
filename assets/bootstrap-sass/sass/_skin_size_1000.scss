@@ -1,0 +1,86 @@
+body.adaptation_habillage_1000px_155809078{
+	#sticker-video-popin{
+		.video-post {
+			padding: 0px;
+		}
+	}
+	&.skin_size_1000{
+		header {
+			height: 80px;
+			.navbar-brand {
+				padding: 8px;
+				margin-top: 0;
+			}
+		}
+		&.prix_renovation_2018 header{
+			height: 140px;
+		}
+		#principal-menu > {
+			.navbar-nav > {
+				li {
+					a {
+						font-size: 12px;
+					}
+				}
+			}
+		}
+		.navbar-default {
+			.navbar-nav>li{
+				&.jardin-nav-logo,
+				&.homenergie-nav-logo{
+					width: 90px;
+				}
+			}
+		}
+		#page.container{
+			max-width: 1000px;
+			.navbar-fixed-top>.container{
+				max-width: 1000px;
+				padding-left: 0;
+				padding-right: 0;
+			}
+			.variable_width_carousel {
+				.slick-prev{
+					left: 85px;
+				}
+				.slick-next{
+					right: 85px;
+				}
+			}
+		}
+		&.page .page,
+		&.quiz_home_test .quizz,
+		&.single.has_gallery #left_wrapper,
+		#content{
+			width: 660px;
+		}
+		.large-diapo{
+			figure, .figure,
+			.visu_block{
+				min-height: 350px;
+			}
+		}
+		&.cold_content{
+			.large-diapo{
+				.visu_block{
+					height: auto;
+				}
+			}
+		}
+	}// .skin_size_1000
+	&.single.skin_size_1000{
+		&.has_gallery{
+			#content,
+			#primary{
+				width: 100%;
+			}
+		}
+		#izi-edf-travaux {
+			min-width: 601px;
+		}
+	}
+		&.bug_marges_format_habillage_5897 #container> .container   {
+			padding-left:10px !important ;
+			padding-right:10px !important;
+	}
+}

@@ -1,0 +1,133 @@
+
+$erea-color: #bf5132;
+body.trilatte_3d_group{
+
+ 	header {
+ 		height:  125px;
+ 		.navbar-brand {
+		   	margin-top: auto;
+		   	padding: unset;
+		}
+		.col-mag{
+			top: 25px;
+		}
+	}
+
+
+	.widget-area .most_popular .title-item-small{
+		font-family : "playfairdisplay_Bold",Helvetica,Arial,sans-serif
+	}
+	&.archive{
+		h2{
+			display: none;
+		}
+
+		&.category-trilatte-3d {
+			h1,h2 {
+				display: none;
+			}
+			.child_cats hr{
+				display: none;
+
+			}
+			.slick-slider {
+				a.title {
+					&:focus {
+						outline: none;
+					}
+				}
+			}
+		}
+	}
+	.navbar{
+		#principal-menu{
+			background-color: $erea-color;
+			.navbar-nav li{
+				margin-left: 55px;
+				a:hover{
+					background-color: $erea-color;
+					opacity: 0.8;
+				}
+				a{
+					font-size: 16px;
+					font-family: "Open Sans";
+				}
+			}
+		}
+		.blockSearch .submit_search_btn{
+			background-color: $erea-color;
+		}
+	}
+	.variable_width_carousel{
+		.slick-arrow{
+			background-color: $erea-color;
+		}
+		.item.slick-active .caption .desc{
+			border-top: 1px solid $erea-color;
+		}
+	}
+	.widget-area .widget-title>span, .widget-area .widget-title>div{
+		border-bottom: 5px solid $erea-color;
+	}
+
+	.info_cat{
+		background-color: $erea-color;
+	}
+	.date{
+		color: $erea-color;
+	}
+	.thumbnail .caption .info_link{
+		color: $erea-color;
+	}
+	.pagination .page-numbers{
+		&.active a {
+		    border-bottom: 2px solid $erea-color;
+		}
+		a, a:hover, a:focus {
+		    color: $erea-color;
+		}
+	}
+
+	.large-diapo{
+		.btn-navs{
+			background-color: $erea-color;
+		}
+		.lists_legend li .slide_nb .caption-navs {
+			&:hover{
+		    	background-image: url("../images-v3/pagination_arrows_trilatte_3d.png");
+		    	&._right {
+				    background-position: 0px 0;
+				}
+				&._left {
+				    background-position: -19px 0;
+				}
+			}
+		}
+	}
+
+	#content .post article a {
+	    color: $erea-color;
+	}
+	#content .date_recette{
+		color: $erea-color;
+	}
+	.pagination .page-numbers > a{
+		&.next::after{
+			background-image: url("../images-v3/pagination_arrows_trilatte_3d.png");
+		}
+		&.last::after{
+			background-image: url("../images-v3/pagination_arrows_trilatte_3d.png");
+		}
+		&.prev::after{
+			background-image: url("../images-v3/pagination_arrows_trilatte_3d.png");
+		}
+		&.first::after{
+			background-image: url("../images-v3/pagination_arrows_trilatte_3d.png");
+		}
+	}
+
+	#megabanner_top{
+		display: none;
+	}
+
+}

@@ -1,0 +1,25 @@
+$font-family-base: 'merriweather-regular,helvetica neue,Helvetica,Arial,sans-serif';
+$main-color: #db2c34; 
+
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/widget_ops";
+
+#content{
+	.three-ops-categories{
+		.thumbnail{
+			margin-bottom: 0px;
+			min-height:120px;
+		}
+	}
+}
+
+.page-no-sidebar{
+	.three-ops-posts{
+		float: left;
+	}
+}
+
+@media (max-width: 767px) {
+	#content .post .three-ops-posts{
+		margin: 40px 0;
+	}
+}

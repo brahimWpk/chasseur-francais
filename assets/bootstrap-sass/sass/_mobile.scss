@@ -1,0 +1,32 @@
+@media ( max-width: $screen-xs-max ) {
+
+	.items-small-list{
+		padding-left: 15px;
+		padding-right: 15px;
+
+	}
+
+	.playlist_ .playlist_thumbnails {
+		.slick-next,.slick-prev{
+			display:none !important;
+		}
+
+	}
+    #rw_alert_cookies.alert-warning {
+        .container {
+            .response-coockies {
+                font-size: 9px!important;
+            }
+        }
+    }
+
+    #content {
+    	#results { 
+	    	.thecontent {
+	    		iframe#grdf-avantages-gaz-naturel-renovation-chauffage-grand-froid-2, iframe#grdf-avantages-gaz-naturel-renovation-chauffage-competitivite-2 {
+		    		height: 432px;
+		    	}
+		    }
+		}
+    } 
+}

@@ -1,0 +1,73 @@
+$ops_main_color: #db2c34;
+
+body.reve-de-combles-ops {
+	.info_cat,
+	.variable_width_carousel .slick-arrow,
+	#principal-menu {
+		background-color: $ops_main_color;
+	}
+	.navbar {
+		.blockSearch {
+			.submit_search_btn {
+				background-color: $ops_main_color;
+			}
+			.search_txt_input input[type="text"] {
+				background-color: $ops_main_color;
+			}
+		}
+	}
+	.date {
+		color: $ops_main_color;
+	}
+	.thumbnail {
+		.caption {
+			.info_link {
+				color: $ops_main_color;
+			}
+		}
+	}
+	.variable_width_carousel {
+		.item.slick-active {
+			.caption {
+				.desc {
+					border-top-color: $ops_main_color;
+				}
+			}
+		}
+	}
+	.widget-area {
+		.widget-title {
+			>span,
+			>div {
+				border-bottom-color: $ops_main_color;
+			}
+		}
+	}
+
+	.pagination {
+		.page-numbers {
+			&.active a{
+				border-bottom-color: $ops_main_color;
+			}
+			>a{
+				color: $ops_main_color;
+				&.next,
+				&.prev,
+				&.last,
+				&.first{
+					&:after{
+						background-image: url('../images-v3/pagination_arrows.png');
+					}
+				}
+			}
+		}
+		.current_page_nb {
+			color: $ops_main_color;
+		}
+	}
+	&.single.template_by_resolution {
+		nav.navbar-site {
+			background-color: $ops_main_color;
+		}
+	}
+}

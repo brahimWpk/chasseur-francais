@@ -1,0 +1,20 @@
+body.adaptation_habillage_1000px_155809078 {
+	&.skin_size_1000 {
+		.container {
+			padding-left: 0 !important;
+			padding-right: 0 !important;
+		}
+		.pub_dfp.masthead_haut,
+		.pub_dfp.masthead_bas {
+			&.filled-with-pub {
+				&.has-pub-1000 {
+					&>div {
+						&>iframe {
+							margin-left: -15px;
+						}
+					}
+				}
+			}
+		}
+	}
+}

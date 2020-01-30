@@ -1,0 +1,126 @@
+@import "bootstrap/variables";
+.uniqlo {
+	overflow-x: hidden;
+	.thecontent {
+		overflow: visible !important;
+	}
+	#page {
+		&.container {
+			overflow-x: hidden;
+			.top_img, .full_thumbs {
+				width: 110%;
+				left: -5%;
+			}
+		}
+	}
+	#content {
+		width: 100% !important;
+		#results {
+			.article_body_content {
+				padding-left: 0 !important;
+				margin-top: 0;
+				p {
+					font-size: 17px;
+				}
+			}
+			article.item .excerpt p {
+				font-size: 19px;
+			}
+		   .thecontent h1 {
+				font-size: 27px;
+			}
+		}
+		.share_text_article {
+			display: none !important;
+		}
+	}
+	.block_breadcrumb {
+		display: none;
+	}
+	.top_img, .full_thumbs {
+		display: block;
+		position: relative;
+		width: 130%;
+		left: -15%;
+		overflow: hidden;
+		img{
+			width: 100%;
+			height: auto;
+
+			border: 0 !important;
+		}
+	}
+	.parallax {
+		display: block;
+		position: relative;
+		height: 600px;
+		width: 200%;
+		right: 50%;
+		margin-top: 10px;
+
+		background-repeat: no-repeat;
+		background-attachment: fixed;
+		background-position: center top;
+		background-size: 100%;
+	}
+	.p_large {
+		img {
+			margin: 0;
+			width: 100%;
+
+			border: 0 !important;
+		}
+	}
+	.p_medium{
+		padding-left: 15px;
+		padding-right: 15px;
+		img{
+			width: 100%;
+
+			border: 0 !important;
+		}
+	}
+	.parallax, .full_thumbs{
+		margin-bottom: 12px;
+	}
+	#intro_article_uniqlo{
+		.title{
+			text-transform: uppercase;
+		}
+	}
+	.parallax{
+		.full_thumbs{
+			img{
+				display: none;
+			}
+		}
+	}
+
+	#results .sharer_after_comment .date_recette {
+		display: inline;
+		font-family: "OpenSans_regular";
+		font-size: 12px;
+		text-transform: uppercase;
+		color: #9a9a9a;
+		float: none !important;
+		&:before {
+			content: "|";
+			display: inline-block;
+			color: #ccc;
+			margin-left: 10px;
+			margin-right: 10px;
+			font-family: "OpenSans_regular", Helvetica, Arial, sans-serif;
+		}
+	}
+}
+
+@media (max-width: $screen-sm-max) {
+	.uniqlo {
+		.parallax {
+			width: 170%;
+			height: 430px;
+
+			background-attachment: scroll;
+		}
+	}
+}

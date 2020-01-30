@@ -1,0 +1,18 @@
+@import "fonts_v3";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/fonts.scss";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/bootstrap_v3.scss";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/bootstrap/variables";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/bootstrap/mixins";
+@import "../../../../reworldmedia/assets/bootstrap-sass/sass/common_header_v3";
+
+
+
+
+$main_color : #db2c34;
+$dark_main_color : #cc2931;
+$main_font : "OpenSans_regular";
+$main_font_bold : "OpenSans_Bold";
+
+$default_color_custom_menu_nav : $main_color;
+@import "custom-nav-menu-v3";
+@import "header-colors";

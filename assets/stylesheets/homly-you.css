@@ -1,0 +1,476 @@
+
+
+/*FONTS DE LA PAGE */
+@font-face {
+	font-family: 'ProximaNovaSoftSemibold';
+	src: url('../sites/all/themes/homly_you/fonts/ProximaNovaSoft-Semibold.woff') format('woff');
+	src: url('../sites/all/themes/homly_you/fonts/ProximaNovaSoft-Semibold.woff2') format('woff2');
+}
+
+@font-face {
+	font-family: 'PictoHomlyYou';
+	src: url('../sites/all/themes/homly_you/fonts/icon/homlyyou.woff') format('woff');
+	src: url('../sites/all/themes/homly_you/fonts/icon/homlyyou.woff2') format('woff2');
+	src: url('../sites/all/themes/homly_you/fonts/icon/homlyyou.ttf') format('ttf');
+	src: url('../sites/all/themes/homly_you/fonts/icon/homlyyou.eot') format('eot');
+}
+
+
+/*FONTS DE LA PAGE */
+
+@media screen and (max-width:630px) {
+
+body {padding-top: 0px; /* Required padding for .navbar-fixed-top. Change if height of navigation changes. */}
+
+.btn-custom{display: none !important;}
+
+.navbar-brand {height: 60px;}
+
+.navbar-fixed-top {
+	position: absolute;
+	right: 0;
+	left: 0;
+	z-index: 1030;
+}
+
+.section-heading {
+	font-size: 30px !important;
+}
+
+.section-heading2{margin-top: 25px !important; }
+
+.text-vertical-center{
+	padding-top: 10px !important;
+}
+
+}
+
+body{
+	font-family: ProximaNovaSoftSemibold, Arial,sans-serif;
+}
+
+
+h1 {
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-size: 25px;
+}
+
+h3{
+	font-size: 17px;
+	font-weight: bold;
+}
+
+.row{
+	padding-bottom: 10px;
+}
+
+.espaceraw{
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+/*Caractéristiques Titres*/
+.margintitle {
+	margin-top: 20px;
+	margin-bottom: 30px;
+	font-size: 35px;
+	text-align: center;
+}
+
+/*ATTRIBUTS LIENS*/
+a.couleur{color: #ffffff;}
+a{text-decoration: none; color: #35465c;}
+a:hover {color: #e9425c; text-decoration: none;}
+
+
+/*ATTRIBUTS PANEL*/
+.panel-default>.panel-heading{
+	color: #35465c;
+	background-color: #fff;
+	border-color: #ddd;}
+
+	.panel-heading {
+		padding-top: 0px;
+		padding-bottom: 0px;
+		text-align: center;
+	}
+
+	/*-------------------------------*/
+	/*   NAVIGATION  */
+	/*-------------------------------*/
+
+	.navbar-inverse {
+		background-color: #2c3b4d;
+		border-color: #2c3b4d;
+	}
+
+
+	.navbar-fixed-top .nav {
+		padding: 15px 0;
+	}
+
+	/*-------------------------------*/
+	/*   WORDING COVER IMAGE */
+	/*-------------------------------*/
+
+	.text-vertical-center {
+		display: table-cell;
+		text-align: center;
+		vertical-align: top;
+		padding-top: 40px;
+	}
+
+	.callout {
+		display: table;
+		width: 100%;
+		height: 520px;
+		color: #fff;
+		background: url('https://www.homly-you.com/sites/default/files/thumbnails/image/devis_travaux_homly_you.jpg') no-repeat top center scroll;
+		-webkit-background-size: cover;
+		-moz-background-size: cover;
+		background-size: cover;
+		-o-background-size: cover;
+	}
+
+
+	/*-------------------------------*/
+	/*   BACKGROUND DE COULEUR */
+	/*-------------------------------*/
+	.bg-beige1{
+		background-color: rgba(61,61,61,0.92);
+		color: #fff;
+		padding-top: 15px;
+	}
+
+	.bg-beige{
+		background-color: #f5f6f7;
+		color: #2c3b4d;
+		padding-top: 50px;
+	}
+
+
+	.bg-blue{
+		background-color: #f5f6f7;
+		color: #2c3b4d;
+		padding-top: 30px;
+		padding-bottom: 30px;
+	}
+
+	/*-------------------------------*/
+	/*   COMMENT CA MARCHE */
+	/*-------------------------------*/
+	.cercle{
+		background-color: #ffffff;
+		border: 4px solid #e9425c;
+		vertical-align: middle;
+		border-radius:50px;
+		-moz-border:50px;
+		-webkit-border-radius: 50px;
+		color: #e9425c;
+		display: block;
+		margin: auto;
+		font-weight: bold;
+		line-height: 60px;
+		text-align: center;
+		width: 70px;
+	}
+
+	.text-etapes{
+		text-align: center;
+		font-size: 20px;
+		margin-bottom: 40px;
+	}
+
+	/*-------------------------------*/
+	/*   CALL TO ACTION */
+	/*-------------------------------*/
+
+	.btn--pink:hover {
+		background: linear-gradient(to bottom,#c2364b 0,#cc394f 100%);
+		background-image: linear-gradient(rgb(194, 54, 75) 0px, rgb(204, 57, 79) 100%);
+		background-position-x: initial;
+		background-position-y: initial;
+		background-size: initial;
+		background-repeat-x: initial;
+		background-repeat-y: initial;
+		background-attachment: initial;
+		background-origin: initial;
+		background-clip: initial;
+		background-color: initial;
+	}
+
+	.btn--pink.btn--top {
+		padding: 0.8em 0.8em 0.8em;
+	}
+
+	.btn--pink {
+		border-radius: .25em;
+		display: inline-block;
+		box-sizing: border-box;
+		text-align: center;
+		background: linear-gradient(to bottom,#e8425c 0,#d93d54 100%);
+		border: 1px solid #c9384e;
+	}
+
+	.btn-success:active {
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn.active, .btn:active {
+		background: linear-gradient(to bottom,#35475c 0,#35475c 100%);
+	}
+
+	.btn--pink.btn--top span {
+		font-size: 1.4em;
+		line-height: 1em;
+		color: #fff;
+	}
+
+	.btn-custom2:active{
+		background: linear-gradient(to bottom,#e8425c 0,#d93d54 100%) !important;
+	}
+
+	.btn--pink span+.icon {
+		margin-left: .5em;
+	}
+
+	.btn--blue .icon, .btn--pink .icon {
+		margin-top: -0.25em;
+		vertical-align: middle;
+	}
+
+	.btn--blue .icon, .btn--blue span, .btn--pink .icon, .btn--pink span {
+		color: #fff;
+	}
+
+	.btncustom{
+		float: none !important;
+	}
+
+	.icon {
+		display: inline-block;
+	}
+
+	.icon, .icon svg {
+		width: 1.4375em;
+		height: 1.4375em;
+	}
+
+	i {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 120%;
+		font-weight: 400;
+	}
+
+	.icon svg {
+		fill: currentColor;
+	}
+
+
+
+	/*ATTRIBUTS CTA PANEL*/
+
+	.btn-success{
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn-success:hover {
+		color: #fff;
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn-success:active {
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn-success:focus {
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn-success:active:focus{
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.btn-success:active:hover{
+		background-color: #35475c;
+		border-color: #35475c;
+		outline: none;
+	}
+
+	.espace{
+		padding-bottom: 50px;
+	}
+
+	/*-------------------------------*/
+	/*   HR SECTION  */
+	/*-------------------------------*/
+	hr{
+		width: 100px;
+		margin-top: 30px;
+		margin-bottom: 30px;
+	}
+
+	.secondary{
+		border-top: 1px solid #fff;
+		margin-bottom: 10px;
+	}
+
+	/*-------------------------------*/
+	/*   SECTION TEMOIGNAGES  */
+	/*-------------------------------*/
+	.quote {
+		color: rgba(0,0,0,.1);
+		text-align: center;
+		margin-bottom: 30px;
+	}
+
+	/*-------------------------------*/
+	/*    Carousel Fade Transition   */
+	/*-------------------------------*/
+
+	#fade-quote-carousel.carousel {
+		padding-bottom: 60px;
+	}
+	#fade-quote-carousel.carousel .carousel-inner .item {
+		opacity: 0;
+		-webkit-transition-property: opacity;
+		-ms-transition-property: opacity;
+		transition-property: opacity;
+	}
+	#fade-quote-carousel.carousel .carousel-inner .active {
+		opacity: 1;
+		-webkit-transition-property: opacity;
+		-ms-transition-property: opacity;
+		transition-property: opacity;
+	}
+	#fade-quote-carousel.carousel .carousel-indicators {
+		bottom: 10px;
+	}
+	#fade-quote-carousel.carousel .carousel-indicators > li {
+		background-color: #e84a64;
+		border: none;
+	}
+	#fade-quote-carousel blockquote {
+		text-align: center;
+		border: none;
+	}
+	#fade-quote-carousel .profile-circle {
+		width: 100px;
+		height: 100px;
+		margin: 0 auto;
+		border-radius: 100px;
+	}
+
+
+	/*-------------------------------*/
+	/* Carousel ILS PARLENT DE NOUS  */
+	/*-------------------------------*/
+
+	.carousel {
+		margin-bottom: 0;
+		padding: 0 40px 30px 40px;
+	}
+
+	/* The controlsy */
+	.carousel-control {
+		left: -12px;
+		height: 40px;
+		width: 40px;
+		background: none repeat scroll 0 0 #222222;
+		border: 4px solid #FFFFFF;
+		border-radius: 23px 23px 23px 23px;
+		margin-top: 90px;
+	}
+
+	.carousel-control.right {
+		right: -12px;
+	}
+
+	/* The indicators */
+	.carousel-indicators {
+		right: 50%;
+		top: auto;
+		bottom: -10px;
+		margin-right: -19px;
+	}
+
+	/* The colour of the indicators */
+	.carousel-indicators li {
+		background: #cecece;
+	}
+
+	.carousel-indicators .active {
+		background: #428bca;
+	}
+
+	/*-------------------------------*/
+	/* FOOTER  */
+	/*-------------------------------*/
+
+	.footer a:link{
+		text-decoration: none;
+		color: #e9425c;
+	}
+
+	.footer a{
+		color: rgba(255, 255, 255, 0.42) !important;
+	}
+
+	.footer a:hover{
+		color: #e9425c !important;
+	}
+
+
+	.footer{
+		font-size: 16px;
+	}
+
+	.footer {
+		background: #2c3b4d none repeat scroll 0 0;
+		margin: 0;
+		padding: 20px 0;
+	}
+
+	.footer_dv {
+		width: 100%;
+	}
+
+	.footer_dv h4 {
+		color: #ffffff;
+		margin-bottom: 30px;
+		margin-top: 30px;
+	}
+
+	.footer_dv ul {
+		list-style: outside none none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.footer_dv ul li {
+		padding: 5px 0;
+		color: #fff; !important;
+	}
+
+	.footer_dv p {
+		color: #fff;
+		font-size: 16px;
+		line-height: 20px;
+		margin: 0 0 15px;
+		text-align: justify;
+	}

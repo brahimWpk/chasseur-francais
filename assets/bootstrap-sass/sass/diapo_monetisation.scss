@@ -1,0 +1,19 @@
+$main_color: #db2c34;
+$diapo_arrwos_color: #db2c34;
+
+@import "deco_diapo_monetisation";
+
+@media (max-width: 465px){
+    body.diapo_monetisation{
+        #container{
+            .title{
+				font-size: 29px;
+            }
+            .article-intro{
+	            p[itemprop="description"]{
+					font-size: 16px;
+	            }
+            }
+        }
+    }
+}

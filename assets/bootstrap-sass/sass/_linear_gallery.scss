@@ -1,0 +1,23 @@
+@media screen and ( max-width: $screen-xs-max ) {
+	body.article_mobile_diaporama_lineaire_151554665 {
+		.diapo_linear.block_diapo {
+			.diaporama-infos {
+				margin-bottom: 15px;
+				margin-top: 15px;
+				clear: both;
+			}
+			figcaption { 
+				padding: 0 4px;
+				p{
+					font-size: 16px !important;
+				} 
+			}
+			figure.diaporama-image {
+				border: 1px solid #9a9a9a;
+				h2 {
+					font-size: 24px !important;
+				}
+			}
+		}
+	}
+}

@@ -200,11 +200,9 @@ function link_nav_posts(){
 }
 
 
-add_action('after_thecontent', 'social_links_deco_project');
+add_action('after_single_article', 'social_links_deco_project');
 function social_links_deco_project(){
-	if(!is_singular('plant')){
-		echo do_shortcode("[simple_addthis_single position='h']");
-	}
+	echo do_shortcode("[simple_addthis_single]");
 }
 
 
@@ -530,7 +528,7 @@ function move_post_title_block(){
 			add_action('before_content_page_single', 'article_intro_excerpt', 30);
 		}
 		else{
-			add_action('top_intro_article', 'show_single_intro_excerpt', 30);
+			add_action('after_top_img_single', 'show_single_intro_excerpt', 30);
 		}
 		if( is_dev('modifs_article_diapo_160919454') ){
 			add_action( 'single_after_author_info', 'add_megabanner_top', 20);

@@ -404,3 +404,12 @@ function sub_domain_links($atts){
 	});
 }
 add_shortcode('sub_domain_links', 'sub_domain_links');
+
+add_action('after_single_article', 'display_read_more_block',20);
+
+function display_read_more_block() {
+	global $post;
+	if($post->post_type == "post" || $post->post_type == "folder") {
+		include(locate_template('include/templates/read_more_block.php'));
+	}
+}

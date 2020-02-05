@@ -368,16 +368,6 @@ $partners = array (
 		),
 	),
 	'pinit_img' => array(),
-	'crm_box_article' => array(
-		'config' => array(
-			'src_iframe' => '/wp-content/themes/deco/renovation/include/templates/iframe-box-article.html',
-		)
-	),
-	'crm_box_article_mobile' => array(
-		'config' => array(
-			'src_iframe' => '/wp-content/themes/deco/renovation/include/templates/iframe-box-article.html',
-		)
-	),
 	'amazon' => array(),
     'soundcast' => array (
         'config' => array (
